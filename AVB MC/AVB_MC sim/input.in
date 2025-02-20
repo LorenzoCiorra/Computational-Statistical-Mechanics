@@ -1,0 +1,46 @@
+0 simulation_type
+8 nr_of_particles_x 
+8 nr_of_particles_y 
+8 nr_of_particles_z 
+1.0 sigma 
+1.0 epsilon 
+0.1 rho 
+4.0 cutoff_radius
+0 nrgenerator_seed
+1.0 particles_mass
+-200 adjstps
+2000 maxadjstps
+500 eqstps
+20000 totsteps
+1000 save_mgl_snapshot
+1 savemeasure
+200
+2.0
+3.838
+0.2
+10.0
+0.002
+
+
+  ReadInput >> simulation type 0 NTV, 1 NPT, 2 NVT w/ bias
+  ReadInput >> number of particles along x direction
+  ReadInput >> number of particles along y direction
+  ReadInput >> number of particles along z direction
+  ReadInput >> sigma
+  ReadInput >> epsilon
+  ReadInput >> rho
+  ReadInput >> radius of CutOff
+  ReadInput >> seed of the random_number_generator
+  ReadInput >> mass of the particles
+  ReadInput >> adjstps //default -200
+  ReadInput >> maxadjstps //default 2000
+  ReadInput >> eqstps //default 500
+  ReadInput >> totsteps //default 20000
+  ReadInput >> save_mgl_snapshot //default 1000 
+  ReadInput >> savemeasure //default 20
+  ReadInput >> outstps
+  ReadInput >> temperature
+  ReadInput >> pressure //se P*=\beta*P*v0, 1 < P* < 10 dove v0 è il volume di una particella
+  ReadInput >> deltra
+  ReadInput >> vmax
+  ReadInput >> dt
